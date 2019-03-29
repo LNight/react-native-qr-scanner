@@ -16,7 +16,6 @@ def _compileSdkVersion = safeExtGet("compileSdkVersion", 26)
 def _buildToolsVersion = safeExtGet("buildToolsVersion", '26.0.3')
 def _minSdkVersion = safeExtGet("minSdkVersion", 16)
 def _targetSdkVersion = safeExtGet("targetSdkVersion", 26)
-def _gradleVersion = safeExtGet("gradle_version", '+')
 
 buildscript {
     repositories {
@@ -24,7 +23,7 @@ buildscript {
     }
 
     dependencies { 
-		classpath "com.android.tools.build:gradle:${_gradleVersion}"
+		classpath "com.android.tools.build:gradle:3.2.1"
     }
 }
 
