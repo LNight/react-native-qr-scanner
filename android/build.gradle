@@ -24,7 +24,7 @@ buildscript {
     }
 
     dependencies { 
-		classpath "com.android.tools.build:gradle:$_gradleVersion"
+		classpath "com.android.tools.build:gradle:${_gradleVersion}"
     }
 }
 
