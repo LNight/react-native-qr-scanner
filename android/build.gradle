@@ -17,17 +17,6 @@ def _buildToolsVersion = safeExtGet("buildToolsVersion", '26.0.3')
 def _minSdkVersion = safeExtGet("minSdkVersion", 16)
 def _targetSdkVersion = safeExtGet("targetSdkVersion", 26)
 
-buildscript {
-    repositories {
-        jcenter()
-    }
-
-    dependencies { 
-		classpath "com.android.tools.build:gradle:3.2.1"
-    }
-}
-
-
 
 apply plugin: 'com.android.library'
 
